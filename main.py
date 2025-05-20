@@ -19,9 +19,11 @@ def main():
     # print(args.number)
     if args.number == 1:
         print(random.choice(lines).strip())
-    else:
+    elif args.number > 1:
         for index in range(1, args.number + 1):
             print(f"{index}. {random.choice(lines)} ")
+    else:
+        raise Exception("The number passed in was smaller than 1.")
 
 
 if __name__ == "__main__":
