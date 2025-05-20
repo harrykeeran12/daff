@@ -1,0 +1,7 @@
+[project]
+name = "daff"
+version = "0.1.0"
+description = "A small CLI tool that prints out daily affirmations."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
