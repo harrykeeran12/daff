@@ -10,7 +10,14 @@ parser = argparse.ArgumentParser(
 
 def main():
     """Print out a random affirmation per day."""
-    parser.add_argument("-n", "--number", default=1, type=int, action="store", help="generate a specific number of affirmations")
+    parser.add_argument(
+        "-n",
+        "--number",
+        default=1,
+        type=int,
+        action="store",
+        help="generate a specific number of affirmations",
+    )
 
     with open("affirmations.txt") as f:
         lines = f.readlines()
