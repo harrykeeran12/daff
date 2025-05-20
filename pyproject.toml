@@ -5,3 +5,8 @@ description = "A small CLI tool that prints out daily affirmations."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[project.scripts]
+daff = "main:main"
